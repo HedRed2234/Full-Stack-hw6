@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакти</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">Контакти</h1>
+
+      <nav class="menu">
+        <ul class="menu-list">
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="../index.html#about">Про мене</a></li>
+          <li><a href="../index.html#hobbies">Захоплення</a></li>
+          <li><a href="../index.html#gallery">Галерея</a></li>
+          <li><a href="#contact-form">Форма звернення</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="contact-form" class="content-block">
+        <h2 class="section-title">Форма звернення</h2>
+
+        <form>
+          <fieldset class="form-field">
+            <legend>Особисті дані</legend>
+
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required />
+          </fieldset>
+
+          <fieldset class="form-field">
+            <legend>Тема звернення</legend>
+
+            <label>
+              <input type="radio" name="subject" value="question" required />
+              Запитання
+            </label>
+
+            <label>
+              <input type="radio" name="subject" value="suggestion" />
+              Пропозиція
+            </label>
+
+            <label>
+              <input type="radio" name="subject" value="feedback" />
+              Відгук
+            </label>
+          </fieldset>
+
+          <fieldset class="form-field">
+            <legend>Додаткові параметри</legend>
+
+            <label>
+              <input type="checkbox" name="reply" value="yes" />
+              Хочу отримати відповідь на електронну пошту
+            </label>
+          </fieldset>
+
+          <fieldset class="form-field">
+            <legend>Повідомлення</legend>
+
+            <label for="message">Текст повідомлення:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </fieldset>
+
+          <button class="submit-button" type="submit">Надіслати</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Мої захоплення</p>
+    </footer>
+  </body>
+</html>
